@@ -11,73 +11,52 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 
-	<title>Pattern Proj</title>
+	<title>Grid + Flexbox</title>
 </head>
 <body>
-	<!-- NAVBAR -->
-	<nav class="navbar bg-dark navbar-dark">
-		<div class="container">
-			<a href="" class="navbar-brand"><i class="fas fa-binoculars mr-2"></i>PATTERN</a>
+	<div class="container">
+		<h1 class="display-4 text-center">Grid + Flexbox</h1>
+		<!-- What if we want to place our content more precisely, say, in the center or on the right? Do we have to create empty divs and proportion them  accordingly? No, just use flex! -->
+		<div class="row border justify-content-around align-items-center">
+			<div class="col-sm-3 bg-warning">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur sapiente error hic blanditiis ad temporibus! Vero minus ipsa dolorem reprehenderit.
+			</div>
+			<div class="col-sm-3 bg-info">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut culpa inventore odio molestiae quia, tempore sed deserunt ullam debitis corporis eveniet fugiat ab enim sit assumenda facilis totam quis alias reiciendis rem at facere ea. Accusamus ducimus, quia, laborum delectus excepturi, mollitia iure, suscipit saepe in ullam tempora officia maxime.
+			</div>
+			<div class="col-sm-3 bg-warning">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur sapiente error hic blanditiis ad temporibus! Vero minus ipsa dolorem reprehenderit.
+			</div>
 		</div>
-	</nav>
 
-	<!-- JUMBOTRON -->
-	<section id="header" class="jumbotron text-center">
-		<h1 class="display-3">PATTERN</h1>
-		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni cupiditate illum non totam maiores, ab.</p>
-		<a href="" class="btn btn-primary">Do Something</a>
-		<a href="" class="btn btn-success">Another Thing</a>
-	</section>
+		<div class="row border justify-content-center align-items-end">
+			<div class="col-sm-2 bg-primary">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur sapiente error hic blanditiis ad temporibus! Vero minus ipsa dolorem reprehenderit.
+			</div>
+			<!-- align-self allows to position individual items along their cross axes -->
+			<div class="col-sm-2 bg-primary align-self-start">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur sapiente error hic blanditiis ad temporibus! Vero minus ipsa dolorem reprehenderit.
+			</div>
+			<div class="col-sm-2 bg-success">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur alias laudantium, vero eaque, mollitia saepe. Eos rerum rem sequi vero, repellendus, aperiam voluptatibus quia quasi debitis iusto sed, eius tempora.
+			</div>
+			<div class="col-sm-2 bg-primary align-self-start">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur sapiente error hic blanditiis ad temporibus! Vero minus ipsa dolorem reprehenderit.
+			</div>
+			<div class="col-sm-2 bg-primary">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur sapiente error hic blanditiis ad temporibus! Vero minus ipsa dolorem reprehenderit.
+			</div>
 
-	<!-- CARDS -->
-	<section id="gallery">
-		<!-- card gives a display of flex -->
-		<!-- we use the grid system to layout our cards -->
-		<div class="container">
-			<div class="row">
-
-				<div class="col-lg-4">
-					<div class="card">
-						<img class="card-img-top" src="imgs/pattern1.jpeg" alt="" class="card-img-top">
-					<!-- at large break point, our card should split into a grid of three equal parts -->
-						<div class="card-body">
-							<h5 class="card-title">First Thing</h5>
-							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, culpa architecto porro? Error, ullam similique, beatae minus expedita sed earum.</p>
-							<a href="#" class="btn btn-outline-success btn-sm">Download</a>
-							<a href="#" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
-						</div>
-					</div>
+			<div class="row text-center justify-content-between">
+				<div class="col-md-6 col-lg-5 bg-danger">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ab dignissimos, odio delectus rerum. A vel, earum accusantium autem atque.
 				</div>
-
-				<div class="col-lg-4">
-					<div class="card">
-						<img class="card-img-top" src="imgs/pattern2.jpeg" alt="" class="card-img-top">
-					<!-- at large break point, our card should split into a grid of three equal parts -->
-						<div class="card-body">
-							<h5 class="card-title">First Thing</h5>
-							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, culpa architecto porro? Error, ullam similique, beatae minus expedita sed earum.</p>
-							<a href="#" class="btn btn-outline-success btn-sm">Download</a>
-							<a href="#" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4">
-					<div class="card">
-						<img class="card-img-top" src="imgs/pattern3.jpeg" alt="" class="card-img-top">
-					<!-- at large break point, our card should split into a grid of three equal parts -->
-						<div class="card-body">
-							<h5 class="card-title">First Thing</h5>
-							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, culpa architecto porro? Error, ullam similique, beatae minus expedita sed earum.</p>
-							<a href="#" class="btn btn-outline-success btn-sm">Download</a>
-							<a href="#" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
-						</div>
-					</div>
-				</div>
-
+				<div class="col-md-6 col-lg-5 bg-danger">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ab dignissimos, odio delectus rerum. A vel, earum accusantium autem atque.
 				</div>
 			</div>
-	</section>
+
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
